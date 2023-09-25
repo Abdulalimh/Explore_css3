@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    .fild{
+        border: 1px solid black;
+        
+    }
+    .badminton_left,.badminton_right{
+        height:300px;
+
+    }
+    .feder{
+        height: 70px;
+        position: relative;
+        bottom: 230px;
+        left: 20px;
+        transition: transform 0.8s ease-out 0.2s;
+        
+    }
+    .fild:hover .feder{
+       transform: translate(880px)rotate(240deg);
+       
+        
+    }
+    .badminton_right{
+        position: relative;
+        left: 800px;
+    }
+    .badminton_left:hover{
+        transform: rotate(40deg);
+        transform-origin: bottom right;
+        transition:transform 0.2s ease-in ;
+    }
+    .badminton_right:hover{
+        transform:rotate(-40deg) ;
+        transform-origin:bottom left ;
+        transition: transform 0.2s ease-in 1s;
+    }
+        
+        
+    
+    
+
+</style>
+
+</head>
+<body>
+    <h1>This is my badminton fild</h1>
+    <div class="fild">
+            <img class="badminton_left" src="batminton_left.png" alt="" >
+    
+            <img class="feder" src="feder1.png" alt="">   
+    
+            <img class="badminton_right" src="batminton_right.png" alt="">
+    
+    </div>
+</body>
+</html>
