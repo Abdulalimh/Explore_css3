@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loging Pages</title>
     <script src="https://kit.fontawesome.com/759a499d6c.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body{
+        body {
             margin: 0px;
             background-image: url(sky.jpg);
-            background-repeat: no-repeat ;
+            background-repeat: no-repeat;
             background-size: cover;
         }
-        .loging-container{
+
+        .loging-container {
             display: flex;
             justify-content: center;
         }
-        .loging-form{
+
+        .loging-form {
             display: flex;
             flex-direction: column;
         }
-        .loging-form input,button{
+
+        .loging-form input,
+        button {
             font-size: 1.2em;
             padding-left: 15px;
             margin-top: 10px;
             border-radius: 5px;
         }
-        .loging-form button{
+
+        .loging-form button {
             background-color: orange;
             padding: 5px;
         }
-        h1{
+
+        h1 {
             font-size: 40px;
             color: rgb(9, 238, 85);
         }
 
-        nav{
-            display:flex;
+        nav {
+            display: flex;
             justify-content: space-between;
             background-color: rgb(91, 91, 155);
             height: 40px;
             padding: 15px 5px 5px 10px;
 
         }
-        nav a{
+
+        nav a {
             text-decoration: none;
             font-size: 20px;
             margin-right: 15px;
             color: white;
         }
-        section p{
-            
-        }
-        
 
+        section p {}
+
+        .div-pat a {
+            margin-right: 20px;
+            padding-left: 10px;
+            text-decoration: none;
+            font-size: 15px;
+            color: black;
+        }
+
+        .div-pat {
+            background-color: rgba(129, 129, 238, 0.192);
+            padding: 15px 5px;
+            box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
+        }
+
+        .ankor:hover {
+            background-color: rgb(121, 121, 187);
+            color: white;
+            padding: 5px 2px;
+        }
+
+        #search {
+            width: 250px;
+            height: 20px;
+            padding: 2px 5px;
+            border-radius: 10px;
+        }
+
+        .search-input {
+            padding: 2px 4px;
+            width: 300px;
+        }
     </style>
 </head>
 
@@ -62,10 +99,18 @@
     <header>
         <nav>
             <span>
-                <a href="">Home</a>
-                <a href="">Contacts</a>
-                <a href="">Products</a>
-                <a href="">About us</a>
+                <div class="div-pat">
+                    <a class="ankor" href="Photo-album.html">Home</a>
+                    <a class="ankor" href="cricet.html">Criket</a>
+                    <a class="ankor" href="batminton.html">Bad Minton</a>
+                    <a class="ankor" href="loging.html">Loging</a>
+                    <a class="ankor" href="vijsibility.html">Contucts</a>
+                    <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
+
+                    <input id="search" type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                </div>
             </span>
             <span id="user">
                 <a href=""><i class="fa-solid fa-user"></i></a>
@@ -78,15 +123,16 @@
         <form class="loging-form" action="">
             <h1>Loging</h1>
 
-              <input type="email" name="" placeholder="Enter your email" id="">
-                
-             <input type="password" name="" placeholder="Enter your password" id="">
-                
-             <button type="submit">Loging</button>
+            <input type="email" name="" placeholder="Enter your email" id="">
+
+            <input type="password" name="" placeholder="Enter your password" id="">
+
+            <button type="submit">Loging</button>
 
         </form>
 
     </section>
-    
+
 </body>
+
 </html>
