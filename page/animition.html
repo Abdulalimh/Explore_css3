@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-
-        @keyframes sliding {
-
-            0%{
-                background-color:rgb(247, 172, 32);
-                bottom: -100%;
-            }
-            5%{
-                background-color:rgb(252, 182, 54);
-            }
-            10%{
-                background-color:rgb(253, 168, 70);
-            }
-            15%{
-                background-color:rgb(255, 159, 81);
-            }
-            25%{
-                background-color:rgb(248, 165, 110);
-            }
-            50%{
-                background-color:rgb(250, 143, 94);
-            }
-            75%{
-                background-color:rgb(252, 145, 102);
-            }
-            100%{
-                background-color:rgb(209, 82, 66);
-                bottom: 40%;
-            }
+      @keyframes sliding {
+        0% {
+          background-color: rgb(247, 172, 32);
+          bottom: -100%;
         }
-
-        .fild{
-            height: 500px;
-            background-image:url(sky.jpg);
-            border: 1px solid skyblue;
+        5% {
+          background-color: rgb(252, 182, 54);
         }
-        .sun{
-            width: 250px;
-            height: 250px;
-            background-color:rgb(255, 166, 0);
-            border-radius: 125px;
-            position: relative;
-            left: 40%;
-            bottom: -100%;
-            animation: sliding 10s ease-in-out 0.5s infinite alternate ;
-            animation-play-state: running;
+        10% {
+          background-color: rgb(253, 168, 70);
         }
+        15% {
+          background-color: rgb(255, 159, 81);
+        }
+        25% {
+          background-color: rgb(248, 165, 110);
+        }
+        50% {
+          background-color: rgb(250, 143, 94);
+        }
+        75% {
+          background-color: rgb(252, 145, 102);
+        }
+        100% {
+          background-color: rgb(209, 82, 66);
+          bottom: 40%;
+        }
+      }
 
+      .fild {
+        height: 500px;
+        background-image: url(sky.jpg);
+        border: 1px solid skyblue;
+      }
+      .sun {
+        width: 250px;
+        height: 250px;
+        background-color: rgb(255, 166, 0);
+        border-radius: 125px;
+        position: relative;
+        left: 40%;
+        bottom: -100%;
+        animation: sliding 10s ease-in-out 0.5s infinite alternate;
+        animation-play-state: running;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="fild">
-        <div class="sun"></div>
+      <div class="sun"></div>
     </div>
-</body>
+  </body>
 </html>

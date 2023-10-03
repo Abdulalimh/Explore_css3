@@ -1,79 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amar Bazar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-        body {
-            background-color: rgba(248, 232, 203, 0.699);
-            margin: 0px;
-        }
+      body {
+        background-color: rgba(248, 232, 203, 0.699);
+        margin: 0px;
+      }
 
+      .head-div:hover a {
+        transform: scale(1.1);
+      }
+
+      .div-pat {
+        background-color: rgba(129, 129, 238, 0.192);
+        padding: 15px 5px;
+        box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
+      }
+
+      .div-pat a {
+        margin-right: 20px;
+        padding-left: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+      }
+
+      .search-input {
+        padding: 2px 4px;
+        width: 300px;
+      }
+
+      .ankor:hover {
+        background-color: rgb(121, 121, 187);
+        color: white;
+        padding: 5px 2px;
+      }
+
+      #search {
+        width: 250px;
+        height: 20px;
+        padding: 2px 5px;
+        border-radius: 10px;
+      }
+
+      #head-title {
+        padding: 10px 10px;
+        background-color: aliceblue;
+      }
+
+      .head-image {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        box-shadow: 10px 30px 50px gray;
+        border-radius: 30px;
+      }
+
+      .head-image img {
+        border-radius: 30px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 35px;
+
+        /* margin: 20px;
+            padding: 10px; */
+      }
+
+      /* .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-row-gap: 30px;
+            
+        } */
+
+      .foods {
+        width: 200px;
+        height: 350px;
+        margin-right: 30px;
+        background-color: burlywood;
+        box-shadow: 10px 8px 15px gray;
+        border-radius: 15px;
+        margin-bottom: 30px;
+      }
+
+      .foods:hover {
+        transform: scale(1.1);
+      }
+
+      .foods img {
+        width: 200px;
+        height: 150px;
+        border-radius: 15px;
+      }
+
+      h2 {
+        margin-top: 0px;
+        padding-top: 0px;
+        background-color: rgba(75, 219, 118, 0.534);
+        color: #000;
+      }
+
+      h2,
+      h3,
+      p,
+      button {
+        margin-left: 3px;
+      }
+
+      button {
+        background-color: orange;
+        padding: 3px 7px;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      /*-----------------------
+            media quyary area 
+         ---------------------------------*/
+      @media only screen and (max-width: 688px) {
         .head-div:hover a {
-            transform: scale(1.1);
+          transform: scale(1.1);
         }
-
 
         .div-pat {
-            background-color: rgba(129, 129, 238, 0.192);
-            padding: 15px 5px;
-            box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
+          background-color: rgba(129, 129, 238, 0.192);
+          padding: 15px 5px;
+          box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
         }
 
         .div-pat a {
-            margin-right: 20px;
-            padding-left: 10px;
-            text-decoration: none;
-            font-size: 15px;
-            color: black;
+          margin-right: 20px;
+          padding-left: 10px;
+          text-decoration: none;
+          font-size: 15px;
+          color: black;
         }
 
         .search-input {
-            padding: 2px 4px;
-            width: 300px;
+          padding: 2px 4px;
+          width: 300px;
         }
 
         .ankor:hover {
-            background-color: rgb(121, 121, 187);
-            color: white;
-            padding: 5px 2px;
+          background-color: rgb(121, 121, 187);
+          color: white;
+          padding: 5px 2px;
         }
 
         #search {
-            width: 250px;
-            height: 20px;
-            padding: 2px 5px;
-            border-radius: 10px;
+          width: 250px;
+          height: 20px;
+          padding: 2px 5px;
+          border-radius: 10px;
         }
 
         #head-title {
-            padding: 10px 10px;
-            background-color: aliceblue;
+          padding: 10px 10px;
+          background-color: aliceblue;
         }
 
         .head-image {
-            margin-left: 20px;
-            margin-right: 20px;
-            margin-top: 30px;
-            margin-bottom: 50px;
-            box-shadow: 10px 30px 50px gray;
-            border-radius: 30px;
+          width: 400px;
+          height: 400px;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-top: 5px;
+          margin-bottom: 50px;
+          box-shadow: 10px 30px 50px gray;
+          border-radius: 5px;
         }
 
         .head-image img {
-            border-radius: 30px;
+          border-radius: 30px;
+          width: 280px;
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            padding-left: 35px;
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-column: auto;
+          align-items: center;
 
-            /* margin: 20px;
+          /* margin: 20px;
             padding: 10px; */
         }
 
@@ -85,442 +205,396 @@
         } */
 
         .foods {
-            width: 200px;
-            height: 350px;
-            margin-right: 30px;
-            background-color: burlywood;
-            box-shadow: 10px 8px 15px gray;
-            border-radius: 15px;
-            margin-bottom: 30px;
-
+          width: 80px;
+          height: 190px;
+          margin-right: 10px;
+          background-color: burlywood;
+          box-shadow: 10px 8px 15px gray;
+          border-radius: 15px;
+          margin-bottom: 30px;
         }
 
         .foods:hover {
-            transform: scale(1.1);
-
+          transform: scale(1.1);
         }
 
         .foods img {
-            width: 200px;
-            height: 150px;
-            border-radius: 15px;
+          width: 80px;
+          height: 80px;
+          border-radius: 15px;
         }
 
         h2 {
-            margin-top: 0px;
-            padding-top: 0px;
-            background-color: rgba(75, 219, 118, 0.534);
-            color: #000;
+          margin-top: 0px;
+          font-size: 12px;
+          padding-top: 0px;
+          background-color: rgba(75, 219, 118, 0.534);
+          color: #000;
         }
 
         h2,
         h3,
         p,
         button {
-            margin-left: 3px;
+          margin-left: 3px;
+          font-size: 8px;
         }
 
         button {
-            background-color: orange;
-            padding: 3px 7px;
-            margin-top: 20px;
-            border-radius: 10px;
+          background-color: orange;
+          margin-top: 20px;
+          border-radius: 10px;
         }
-
-        /*-----------------------
-            media quyary area 
-         ---------------------------------*/
-        @media only screen and (max-width:688px) {
-
-            .head-div:hover a {
-                transform: scale(1.1);
-            }
-
-
-            .div-pat {
-                background-color: rgba(129, 129, 238, 0.192);
-                padding: 15px 5px;
-                box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
-            }
-
-            .div-pat a {
-                margin-right: 20px;
-                padding-left: 10px;
-                text-decoration: none;
-                font-size: 15px;
-                color: black;
-            }
-
-            .search-input {
-                padding: 2px 4px;
-                width: 300px;
-            }
-
-            .ankor:hover {
-                background-color: rgb(121, 121, 187);
-                color: white;
-                padding: 5px 2px;
-            }
-
-            #search {
-                width: 250px;
-                height: 20px;
-                padding: 2px 5px;
-                border-radius: 10px;
-            }
-
-            #head-title {
-                padding: 10px 10px;
-                background-color: aliceblue;
-            }
-
-            .head-image {
-                width: 400px;
-                height: 400px;
-                margin-left: 5px;
-                margin-right: 5px;
-                margin-top: 5px;
-                margin-bottom: 50px;
-                box-shadow: 10px 30px 50px gray;
-                border-radius: 5px;
-            }
-
-            .head-image img {
-                border-radius: 30px;
-                width: 280px;
-
-            }
-
-            .container {
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                grid-column: auto;
-                align-items: center;
-
-
-                /* margin: 20px;
-            padding: 10px; */
-            }
-
-            /* .container {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-row-gap: 30px;
-            
-        } */
-
-            .foods {
-                width: 80px;
-                height: 190px;
-                margin-right: 10px;
-                background-color: burlywood;
-                box-shadow: 10px 8px 15px gray;
-                border-radius: 15px;
-                margin-bottom: 30px;
-
-            }
-
-            .foods:hover {
-                transform: scale(1.1);
-
-            }
-
-            .foods img {
-                width: 80px;
-                height: 80px;
-                border-radius: 15px;
-            }
-
-            h2 {
-                margin-top: 0px;
-                font-size: 12px;
-                padding-top: 0px;
-                background-color: rgba(75, 219, 118, 0.534);
-                color: #000;
-            }
-
-            h2,
-            h3,
-            p,
-            button {
-                margin-left: 3px;
-                font-size: 8px;
-            }
-
-            button {
-                background-color: orange;
-                margin-top: 20px;
-                border-radius: 10px;
-            }
-
-
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header disuin start -->
     <header>
-        <div class="div-pat">
-            <a class="ankor" href="page/Photo-album.html">Home</a>
-            <a class="ankor" href="page/cricet.html">Criket</a>
-            <a class="ankor" href="page/batminton.html">Bad Minton</a>
-            <a class="ankor" href="index.html">Loging</a>
-            <a class="ankor" href="page/Photo-album.html">Kacha-bazar</a>
-            <a class="ankor" href="page/vijsibility.html">Contucts</a>
-            <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
+      <div class="div-pat">
+        <a class="ankor" href="Photo-album.html">Home</a>
+        <a class="ankor" href="cricet.html">Criket</a>
+        <a class="ankor" href="batminton.html">Bad Minton</a>
+        <a class="ankor" href="loging.html">Loging</a>
+        <a class="ankor" href="kacha-bazar.html">Kacha-bazar</a>
+        <a class="ankor" href="vijsibility.html">Contucts</a>
+        <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
 
-            <input id="search" type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-
-        </div>
-        <h2 id="head-title">Amader kacha bazare Aponake Janai antorik shuvessa.</h2>
-
+        <input id="search" type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+      <h2 id="head-title">
+        Amader kacha bazare Aponake Janai antorik shuvessa.
+      </h2>
     </header>
     <!-- section start hear -->
 
     <section class="section1">
-        <div class="head-image">
-
-            <span>
-                <img src="sobji-image/vajitable3.jpg" alt="" srcset="">
-            </span>
-            <span>
-                <img src="sobji-image/vajitable3.jpg" alt="" srcset="">
-            </span>
-
-        </div>
+      <div class="head-image">
+        <span>
+          <img src="sobji-image/vajitable3.jpg" alt="" srcset="" />
+        </span>
+        <span>
+          <img src="sobji-image/vajitable3.jpg" alt="" srcset="" />
+        </span>
+      </div>
     </section>
-
 
     <section>
-
-        <div class="container">
-            <div class="foods">
-                <img src="sobji-image/alu.jpg" alt="">
-                <h2>Alu-1</h2>
-                <h3>Price : 101 Tk</h3>
-                <p>Lorem ipsum dolor sit amet.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/kacha-kola.jpg" alt="">
-                <h2>Alu-2</h2>
-                <h3>Price : 102 Tk</h3>
-                <p>Quaerat est facilis adipisci omnis?<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/kacha-moric.jpg" alt="">
-                <h2>Alu-3</h2>
-                <h3>Price : 103 Tk</h3>
-                <p>Animi ut quis quas assumenda?<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/kakrol.png" alt="">
-                <h2>Alu-4</h2>
-                <h3>Price : 104 Tk</h3>
-                <p>Voluptatibus dolore corrupti a sapiente.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/kochu.jpg" alt="">
-                <h2>Alu-5</h2>
-                <h3>Price : 105 Tk</h3>
-                <p>Deleniti soluta asperiores sint reprehenderit.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/kochur-sori.jpeg" alt="">
-                <h2>Alu-6</h2>
-                <h3>Price : 106 Tk</h3>
-                <p>Commodi quia quod mollitia voluptatum.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/korollaa.jpeg" alt="">
-                <h2>Alu-7</h2>
-                <h3>Price : 107 Tk</h3>
-                <p>Quasi ipsam facere eveniet vero.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/kumra.jpeg" alt="">
-                <h2>Alu-8</h2>
-                <h3>Price : 108 Tk</h3>
-                <p>Ducimus velit dolores esse quisquam.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Kochur-Loti.jpg" alt="">
-                <h2>Alu-9</h2>
-                <h3>Price : 109 Tk</h3>
-                <p>Cumque sequi tenetur iste perspiciatis?<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Chal-Kumra.jpg" alt="">
-                <h2>Alu-10</h2>
-                <h3>Price : 1010 Tk</h3>
-                <p>Sunt ad dolore repellendus nulla.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/pata-kopi.png" alt="">
-                <h2>Alu-11</h2>
-                <h3>Price : 1011 Tk</h3>
-                <p>Tempore molestiae totam rerum voluptas!<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/begun-lomba.jpg" alt="">
-                <h2>Alu-12</h2>
-                <h3>Price : 1012 Tk</h3>
-                <p>Repellendus cupiditate veritatis iste et.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/begun.jpg" alt="">
-                <h2>Alu-13</h2>
-                <h3>Price : 1013 Tk</h3>
-                <p>Molestias rerum tenetur quasi eaque.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/bit.jpg" alt="">
-                <h2>Alu-14</h2>
-                <h3>Price : 1014 Tk</h3>
-                <p>Ad illo magnam a! Tempora!<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/botboti.jpg" alt="">
-                <h2>Alu-15</h2>
-                <h3>Price : 1015 Tk</h3>
-                <p>Cupiditate alias architecto temporibus corrupti?<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Chal-Kumra.jpg" alt="">
-                <h2>Alu-16</h2>
-                <h3>Price : 1016 Tk</h3>
-                <p>Voluptatum dolor nisi nihil quaerat!<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/dundul.jpg" alt="">
-                <h2>Alu-17</h2>
-                <h3>Price : 1017 Tk</h3>
-                <p>Architecto quidem eum voluptas recusandae.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Fullkopi.jpg" alt="">
-                <h2>Alu-18</h2>
-                <h3>Price : 1018 Tk</h3>
-                <p>Amet porro suscipit aliquid temporibus!<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/lau.jpg" alt="">
-                <h2>Alu-19</h2>
-                <h3>Price : 1019 Tk</h3>
-                <p>Laboriosam sint ex delectus recusandae.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Lebu.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/jhinga.png" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/piyaj.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/potol.jpeg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/sem.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/shalgom.jpeg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/shukna-moris.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/sisings.png" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/tometo.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/vendi.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Deshisosha.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/khiroi.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/lal alu.png" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/lala mula.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/mula-sada.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/gajor.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Lebu.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
-            <div class="foods">
-                <img src="sobji-image/Lebu.jpg" alt="">
-                <h2>Alu-20</h2>
-                <h3>Price : 1020 Tk</h3>
-                <p>Dolorem iure repellendus quos ut.<br><button>Order now</button></p>
-            </div>
+      <div class="container">
+        <div class="foods">
+          <img src="sobji-image/alu.jpg" alt="" />
+          <h2>Alu-1</h2>
+          <h3>Price : 101 Tk</h3>
+          <p>Lorem ipsum dolor sit amet.<br /><button>Order now</button></p>
         </div>
+        <div class="foods">
+          <img src="sobji-image/kacha-kola.jpg" alt="" />
+          <h2>Alu-2</h2>
+          <h3>Price : 102 Tk</h3>
+          <p>
+            Quaerat est facilis adipisci omnis?<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/kacha-moric.jpg" alt="" />
+          <h2>Alu-3</h2>
+          <h3>Price : 103 Tk</h3>
+          <p>Animi ut quis quas assumenda?<br /><button>Order now</button></p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/kakrol.png" alt="" />
+          <h2>Alu-4</h2>
+          <h3>Price : 104 Tk</h3>
+          <p>
+            Voluptatibus dolore corrupti a sapiente.<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/kochu.jpg" alt="" />
+          <h2>Alu-5</h2>
+          <h3>Price : 105 Tk</h3>
+          <p>
+            Deleniti soluta asperiores sint reprehenderit.<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/kochur-sori.jpeg" alt="" />
+          <h2>Alu-6</h2>
+          <h3>Price : 106 Tk</h3>
+          <p>
+            Commodi quia quod mollitia voluptatum.<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/korollaa.jpeg" alt="" />
+          <h2>Alu-7</h2>
+          <h3>Price : 107 Tk</h3>
+          <p>
+            Quasi ipsam facere eveniet vero.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/kumra.jpeg" alt="" />
+          <h2>Alu-8</h2>
+          <h3>Price : 108 Tk</h3>
+          <p>
+            Ducimus velit dolores esse quisquam.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Kochur-Loti.jpg" alt="" />
+          <h2>Alu-9</h2>
+          <h3>Price : 109 Tk</h3>
+          <p>
+            Cumque sequi tenetur iste perspiciatis?<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Chal-Kumra.jpg" alt="" />
+          <h2>Alu-10</h2>
+          <h3>Price : 1010 Tk</h3>
+          <p>
+            Sunt ad dolore repellendus nulla.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/pata-kopi.png" alt="" />
+          <h2>Alu-11</h2>
+          <h3>Price : 1011 Tk</h3>
+          <p>
+            Tempore molestiae totam rerum voluptas!<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/begun-lomba.jpg" alt="" />
+          <h2>Alu-12</h2>
+          <h3>Price : 1012 Tk</h3>
+          <p>
+            Repellendus cupiditate veritatis iste et.<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/begun.jpg" alt="" />
+          <h2>Alu-13</h2>
+          <h3>Price : 1013 Tk</h3>
+          <p>
+            Molestias rerum tenetur quasi eaque.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/bit.jpg" alt="" />
+          <h2>Alu-14</h2>
+          <h3>Price : 1014 Tk</h3>
+          <p>Ad illo magnam a! Tempora!<br /><button>Order now</button></p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/botboti.jpg" alt="" />
+          <h2>Alu-15</h2>
+          <h3>Price : 1015 Tk</h3>
+          <p>
+            Cupiditate alias architecto temporibus corrupti?<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Chal-Kumra.jpg" alt="" />
+          <h2>Alu-16</h2>
+          <h3>Price : 1016 Tk</h3>
+          <p>
+            Voluptatum dolor nisi nihil quaerat!<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/dundul.jpg" alt="" />
+          <h2>Alu-17</h2>
+          <h3>Price : 1017 Tk</h3>
+          <p>
+            Architecto quidem eum voluptas recusandae.<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Fullkopi.jpg" alt="" />
+          <h2>Alu-18</h2>
+          <h3>Price : 1018 Tk</h3>
+          <p>
+            Amet porro suscipit aliquid temporibus!<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/lau.jpg" alt="" />
+          <h2>Alu-19</h2>
+          <h3>Price : 1019 Tk</h3>
+          <p>
+            Laboriosam sint ex delectus recusandae.<br /><button>
+              Order now
+            </button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Lebu.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/jhinga.png" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/piyaj.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/potol.jpeg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/sem.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/shalgom.jpeg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/shukna-moris.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/sisings.png" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/tometo.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/vendi.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Deshisosha.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/khiroi.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/lal-alu.png" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/lala-mula.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/mula-sada.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/gajor.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Lebu.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+        <div class="foods">
+          <img src="sobji-image/Lebu.jpg" alt="" />
+          <h2>Alu-20</h2>
+          <h3>Price : 1020 Tk</h3>
+          <p>
+            Dolorem iure repellendus quos ut.<br /><button>Order now</button>
+          </p>
+        </div>
+      </div>
     </section>
     <!-- section end hear -->
-</body>
-
+  </body>
 </html>

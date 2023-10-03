@@ -1,397 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amar Bazar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <style>
-        body {
-            margin: 0px;
-        }
+      body {
+        margin: 0px;
+      }
 
+      .fruit-section {
+        box-shadow: 10px 20px 30px gray;
+        margin: 15px;
+        padding: 15px;
+      }
 
-        .fruit-section {
-            box-shadow: 10px 20px 30px gray;
-            margin: 15px;
-            padding: 15px;
+      .fruit-frem {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding-left: 25px;
+      }
 
-        }
+      .food {
+        width: 200px;
+        margin-right: 30px;
+        margin-top: 20px;
+        border-radius: 15px;
+        background-color: rgba(245, 182, 100, 0.466);
+        box-shadow: 10px 5px 20px rgb(151, 219, 151);
+      }
 
-        .fruit-frem {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
-            padding-left: 25px;
-        }
+      .food:hover {
+        transform: scale(1.1);
+      }
 
-        .food {
+      .food img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+      }
 
-            width: 200px;
-            margin-right: 30px;
-            margin-top: 20px;
-            border-radius: 15px;
-            background-color: rgba(245, 182, 100, 0.466);
-            box-shadow: 10px 5px 20px rgb(151, 219, 151);
+      button {
+        margin-top: 20px;
+        background-color: rgba(240, 173, 48, 0.932);
+        border-radius: 10px;
+        padding: 5px;
+      }
 
-        }
+      h2,
+      h3,
+      p {
+        padding-left: 5px;
+      }
 
-        .food:hover {
-            transform: scale(1.1);
-        }
+      h2 {
+        background-color: rgba(123, 202, 116, 0.432);
+        margin-top: 0px;
+        color: black;
+      }
 
-        .food img {
-            width: 200px;
-            height: 150px;
-            border-radius: 10px;
-        }
+      .head-div {
+        display: flex;
+        margin: 40px 10px;
+        box-shadow: 10px 15px 30px grey;
+        border-radius: 20px;
+        padding: 15px 10px;
+      }
 
-        button {
-            margin-top: 20px;
-            background-color: rgba(240, 173, 48, 0.932);
-            border-radius: 10px;
-            padding: 5px;
-        }
+      .head-div:hover a {
+        transform: scale(1.1);
+      }
 
-        h2,
-        h3,
-        p {
-            padding-left: 5px;
+      .div-pat {
+        background-color: rgba(129, 129, 238, 0.192);
+        padding: 15px 5px;
+        box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
+      }
 
-        }
+      .div-pat a {
+        margin-right: 20px;
+        padding-left: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+      }
 
-        h2 {
-            background-color: rgba(123, 202, 116, 0.432);
-            margin-top: 0px;
-            color: black;
-        }
+      .search-input {
+        padding: 2px 4px;
+        width: 300px;
+      }
 
-        .head-div {
-            display: flex;
-            margin: 40px 10px;
-            box-shadow: 10px 15px 30px grey;
-            border-radius: 20px;
-            padding: 15px 10px;
-        }
+      .ankor:hover {
+        background-color: rgb(121, 121, 187);
+        color: white;
+        padding: 5px 2px;
+      }
 
-        .head-div:hover a {
-            transform: scale(1.1);
-        }
-
-
-        .div-pat {
-            background-color: rgba(129, 129, 238, 0.192);
-            padding: 15px 5px;
-            box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
-        }
-
-        .div-pat a {
-            margin-right: 20px;
-            padding-left: 10px;
-            text-decoration: none;
-            font-size: 15px;
-            color: black;
-        }
-
-        .search-input {
-            padding: 2px 4px;
-            width: 300px;
-        }
-
-        .ankor:hover {
-            background-color: rgb(121, 121, 187);
-            color: white;
-            padding: 5px 2px;
-        }
-
-        #search {
-            width: 250px;
-            height: 20px;
-            padding: 2px 5px;
-            border-radius: 10px;
-        }
+      #search {
+        width: 250px;
+        height: 20px;
+        padding: 2px 5px;
+        border-radius: 10px;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="div-pat">
-        <a class="ankor" href="page/Photo-album.html">Home</a>
-        <a class="ankor" href="page/cricet.html">Criket</a>
-        <a class="ankor" href="page/batminton.html">Bad Minton</a>
-        <a class="ankor" href="index.html">Loging</a>
-        <a class="ankor" href="page/Photo-album.html">Kacha-bazar</a>
-        <a class="ankor" href="page/vijsibility.html">Contucts</a>
-        <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
+      <a class="ankor" href="Photo-album.html">Home</a>
+      <a class="ankor" href="cricet.html">Criket</a>
+      <a class="ankor" href="batminton.html">Bad Minton</a>
+      <a class="ankor" href="loging.html">Loging</a>
+      <a class="ankor" href="kacha-bazar.html">Kacha-bazar</a>
+      <a class="ankor" href="vijsibility.html">Contucts</a>
+      <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
 
-        <input id="search" type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-
+      <input id="search" type="text" placeholder="Search.." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
     </div>
     <div class="head-div">
-        <img id="head-image" src="images/fruits1" alt="" srcset="">
-        <img id="head-image2" src="images/fruits1" alt="" srcset="">
+      <img id="head-image" src="images/fruits1" alt="" srcset="" />
+      <img id="head-image2" src="images/fruits1" alt="" srcset="" />
     </div>
     <section class="fruit-section">
-        <div class="fruit-frem">
-            <div class="food">
-                <img src="images/ata.jpg" alt="">
-                <h2>Ata</h2>
-                <h3>Price : -101</h3>
-                <p>Ata khubi mojader o susshadu fol
-                    <br><Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/mango.jpg" alt="">
-                <h2>Mango</h2>
-                <h3>Price : -102</h3>
-                <p>Mangu is very nice fruit.<br><Button>Order now</Button></p>
-            </div>
-            <div class="food">
-                <img src="images/mango-banana.jpg" alt="">
-                <h2>Mango</h2>
-                <h3>Price : -102</h3>
-                <p>Mangu is very nice fruit.<br><Button>Order now</Button></p>
-            </div>
-            <div class="food">
-                <img src="images/mango-harivanga.jpg" alt="">
-                <h2>Mango</h2>
-                <h3>Price : -102</h3>
-                <p>Mangu is very nice fruit.<br><Button>Order now</Button></p>
-            </div>
-            <div class="food">
-                <img src="images/mango-himsagor.jpg" alt="">
-                <h2>Mango</h2>
-                <h3>Price : -102</h3>
-                <p>Mangu is very nice fruit.<br><Button>Order now</Button></p>
-            </div>
-            <div class="food">
-                <img src="images/mango_amrapali.jpg" alt="">
-                <h2>Mango</h2>
-                <h3>Price : -102</h3>
-                <p>Mangu is very nice fruit.<br><Button>Order now</Button></p>
-            </div>
-            <div class="food">
-                <img src="images/kalo jam.png" alt="">
-                <h2>Kalo Jam</h2>
-                <h3>Price : -103</h3>
-                <p>Kalo jam ! mukhe ruchi Ane.<br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/kola.jpg" alt="">
-                <h2>Banana</h2>
-                <h3>Price : -104</h3>
-                <p>Banana Shorire pushti ane <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/pepe.jpeg" alt="">
-                <h2>Papaya</h2>
-                <h3>Price : -105</h3>
-                <p>Incidunt, explicabo, libero doloribus<br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/anar.png" alt="">
-                <h2>Anar</h2>
-                <h3>Price : -106</h3>
-                <p>Pariatur, eligendi exercitationem explicabo
-                    <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/anarosh.jpg" alt="">
-                <h2>Paine Apple</h2>
-                <h3>Price : -107</h3>
-                <p>Molestias maxime nobis enim!
-                    <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/peyara.jpg" alt="">
-                <h2>Gova</h2>
-                <h3>Price : -80 tk</h3>
-                <p>Consequatur, itaque, veritatis aperiam<br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/komla.jpg" alt="">
-                <h2>Komola</h2>
-                <h3>Price : -109</h3>
-                <p>Voluptates tempora tempore eius repellat <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/nashpoti.jpg" alt="">
-                <h2>Neshpoti</h2>
-                <h3>Price : -1010</h3>
-                <p>Repudiandae quia odit voluptatibus saepe, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/lichu.jpg" alt="">
-                <h2>Lechy</h2>
-                <h3>Price : -1011</h3>
-                <p>Eius consequatur voluptatibus repudiandae,<br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/lotkon.jpg" alt="">
-                <h2>Lotkon</h2>
-                <h3>Price : -1012</h3>
-                <p>Illum quae unde quis nobis doloribus quos<br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/kathal.jpg" alt="">
-                <h2>Juck Fruit</h2>
-                <h3>Price : -1013</h3>
-                <p>Officia nesciunt excepturi at deleniti,
-                    <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/khejur.jpg" alt="">
-                <h2>Khejur</h2>
-                <h3>Price : -1014</h3>
-                <p>Numquam voluptatibus laudantium iusto,
-                    <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/tormuj.jpg" alt="">
-                <h2>Tormuj</h2>
-                <h3>Price : -1015</h3>
-                <p>Ullam minus quae aut! Placeat aspernatur
-                    <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/kalo-angur.jpeg" alt="">
-                <h2>Kalo Angur</h2>
-                <h3>Price : -1016</h3>
-                <p>Cupiditate laboriosam perspiciatis voluptatibus
-                    <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/shada-angur.jpg" alt="">
-                <h2>Shada Angur</h2>
-                <h3>Price : -1017</h3>
-                <p>Veritatis ex cumque culpa dolor, ipsum a, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/amra.jpg" alt="">
-                <h2>Amra</h2>
-                <h3>Price : -1018</h3>
-                <p>Voluptates cum, debitis, provident repellendus <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/lal-angur.jpg" alt="">
-                <h2>Lal Angur</h2>
-                <h3>Price : -1019</h3>
-                <p>Cum mollitia quia cupiditate ut placeat iusto esse <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
-            <div class="food">
-                <img src="images/jambura.jpeg" alt="">
-                <h2>Jambura</h2>
-                <h3>Price : -1020</h3>
-                <p>Temporibus necessitatibus architecto vel, <br>
-                    <Button>Order now</Button>
-                </p>
-            </div>
+      <div class="fruit-frem">
+        <div class="food">
+          <img src="images/ata.jpg" alt="" />
+          <h2>Ata</h2>
+          <h3>Price : -101</h3>
+          <p>
+            Ata khubi mojader o susshadu fol <br /><button>Order now</button>
+          </p>
         </div>
+        <div class="food">
+          <img src="images/mango.jpg" alt="" />
+          <h2>Mango</h2>
+          <h3>Price : -102</h3>
+          <p>Mangu is very nice fruit.<br /><button>Order now</button></p>
+        </div>
+        <div class="food">
+          <img src="images/mango-banana.jpg" alt="" />
+          <h2>Mango</h2>
+          <h3>Price : -102</h3>
+          <p>Mangu is very nice fruit.<br /><button>Order now</button></p>
+        </div>
+        <div class="food">
+          <img src="images/mango-harivanga.jpg" alt="" />
+          <h2>Mango</h2>
+          <h3>Price : -102</h3>
+          <p>Mangu is very nice fruit.<br /><button>Order now</button></p>
+        </div>
+        <div class="food">
+          <img src="images/mango-himsagor.jpg" alt="" />
+          <h2>Mango</h2>
+          <h3>Price : -102</h3>
+          <p>Mangu is very nice fruit.<br /><button>Order now</button></p>
+        </div>
+        <div class="food">
+          <img src="images/mango_amrapali.jpg" alt="" />
+          <h2>Mango</h2>
+          <h3>Price : -102</h3>
+          <p>Mangu is very nice fruit.<br /><button>Order now</button></p>
+        </div>
+        <div class="food">
+          <img src="images/kalo jam.png" alt="" />
+          <h2>Kalo Jam</h2>
+          <h3>Price : -103</h3>
+          <p>
+            Kalo jam ! mukhe ruchi Ane.<br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/kola.jpg" alt="" />
+          <h2>Banana</h2>
+          <h3>Price : -104</h3>
+          <p>
+            Banana Shorire pushti ane <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/pepe.jpeg" alt="" />
+          <h2>Papaya</h2>
+          <h3>Price : -105</h3>
+          <p>
+            Incidunt, explicabo, libero doloribus<br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/anar.png" alt="" />
+          <h2>Anar</h2>
+          <h3>Price : -106</h3>
+          <p>
+            Pariatur, eligendi exercitationem explicabo
+            <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/anarosh.jpg" alt="" />
+          <h2>Paine Apple</h2>
+          <h3>Price : -107</h3>
+          <p>
+            Molestias maxime nobis enim!
+            <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/peyara.jpg" alt="" />
+          <h2>Gova</h2>
+          <h3>Price : -80 tk</h3>
+          <p>
+            Consequatur, itaque, veritatis aperiam<br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/komla.jpg" alt="" />
+          <h2>Komola</h2>
+          <h3>Price : -109</h3>
+          <p>
+            Voluptates tempora tempore eius repellat <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/nashpoti.jpg" alt="" />
+          <h2>Neshpoti</h2>
+          <h3>Price : -1010</h3>
+          <p>
+            Repudiandae quia odit voluptatibus saepe, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/lichu.jpg" alt="" />
+          <h2>Lechy</h2>
+          <h3>Price : -1011</h3>
+          <p>
+            Eius consequatur voluptatibus repudiandae,<br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/lotkon.jpg" alt="" />
+          <h2>Lotkon</h2>
+          <h3>Price : -1012</h3>
+          <p>
+            Illum quae unde quis nobis doloribus quos<br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/kathal.jpg" alt="" />
+          <h2>Juck Fruit</h2>
+          <h3>Price : -1013</h3>
+          <p>
+            Officia nesciunt excepturi at deleniti,
+            <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/khejur.jpg" alt="" />
+          <h2>Khejur</h2>
+          <h3>Price : -1014</h3>
+          <p>
+            Numquam voluptatibus laudantium iusto,
+            <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/tormuj.jpg" alt="" />
+          <h2>Tormuj</h2>
+          <h3>Price : -1015</h3>
+          <p>
+            Ullam minus quae aut! Placeat aspernatur
+            <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/kalo-angur.jpeg" alt="" />
+          <h2>Kalo Angur</h2>
+          <h3>Price : -1016</h3>
+          <p>
+            Cupiditate laboriosam perspiciatis voluptatibus
+            <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/shada-angur.jpg" alt="" />
+          <h2>Shada Angur</h2>
+          <h3>Price : -1017</h3>
+          <p>
+            Veritatis ex cumque culpa dolor, ipsum a, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/amra.jpg" alt="" />
+          <h2>Amra</h2>
+          <h3>Price : -1018</h3>
+          <p>
+            Voluptates cum, debitis, provident repellendus <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/lal-angur.jpg" alt="" />
+          <h2>Lal Angur</h2>
+          <h3>Price : -1019</h3>
+          <p>
+            Cum mollitia quia cupiditate ut placeat iusto esse <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+        <div class="food">
+          <img src="images/jambura.jpeg" alt="" />
+          <h2>Jambura</h2>
+          <h3>Price : -1020</h3>
+          <p>
+            Temporibus necessitatibus architecto vel, <br />
+            <button>Order now</button>
+          </p>
+        </div>
+      </div>
     </section>
-
-
-</body>
-
+  </body>
 </html>

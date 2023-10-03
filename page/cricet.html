@@ -1,95 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criket</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-        .bat:hover {
-            transform: rotate(-60deg);
-            transform-origin: top right;
-            transition: transform 0.2s ease-in;
+      .bat:hover {
+        transform: rotate(-60deg);
+        transform-origin: top right;
+        transition: transform 0.2s ease-in;
+      }
 
-        }
+      .filed {
+        border: 1px solid;
+      }
 
-        .filed {
-            border: 1px solid;
-        }
+      .ball {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 25px;
+        position: relative;
+        left: 451px;
+        top: -30px;
+        transition: transform 1s ease-out 0.3s;
+      }
 
-        .ball {
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            border-radius: 25px;
-            position: relative;
-            left: 451px;
-            top: -30px;
-            transition: transform 1s ease-out 0.3s;
-        }
+      .filed:hover .ball {
+        transform: translate(1100px, -150px);
+      }
 
-        .filed:hover .ball {
-            transform: translate(1100px, -150px);
+      .div-pat a {
+        margin-right: 20px;
+        padding-left: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+      }
 
+      .div-pat {
+        background-color: rgba(129, 129, 238, 0.192);
+        padding: 15px 5px;
+        box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
+      }
 
-        }
+      .ankor:hover {
+        background-color: rgb(121, 121, 187);
+        color: white;
+        padding: 5px 2px;
+      }
 
-        .div-pat a {
-            margin-right: 20px;
-            padding-left: 10px;
-            text-decoration: none;
-            font-size: 15px;
-            color: black;
-        }
+      #search {
+        width: 250px;
+        height: 20px;
+        padding: 2px 5px;
+        border-radius: 10px;
+      }
 
-        .div-pat {
-            background-color: rgba(129, 129, 238, 0.192);
-            padding: 15px 5px;
-            box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
-        }
-
-        .ankor:hover {
-            background-color: rgb(121, 121, 187);
-            color: white;
-            padding: 5px 2px;
-        }
-
-        #search {
-            width: 250px;
-            height: 20px;
-            padding: 2px 5px;
-            border-radius: 10px;
-        }
-
-        .search-input {
-            padding: 2px 4px;
-            width: 300px;
-        }
+      .search-input {
+        padding: 2px 4px;
+        width: 300px;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="div-pat">
-        <a class="ankor" href="page/Photo-album.html">Home</a>
-        <a class="ankor" href="page/cricet.html">Criket</a>
-        <a class="ankor" href="page/batminton.html">Bad Minton</a>
-        <a class="ankor" href="index.html">Loging</a>
-        <a class="ankor" href="page/Photo-album.html">Kacha-bazar</a>
-        <a class="ankor" href="page/vijsibility.html">Contucts</a>
-        <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
+      <a class="ankor" href="Photo-album.html">Home</a>
+      <a class="ankor" href="cricet.html">Criket</a>
+      <a class="ankor" href="batminton.html">Bad Minton</a>
+      <a class="ankor" href="loging.html">Loging</a>
+      <a class="ankor" href="kacha-bazar.html">Kacha-bazar</a>
+      <a class="ankor" href="vijsibility.html">Contucts</a>
+      <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
 
-        <input id="search" type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-
+      <input id="search" type="text" placeholder="Search.." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
     </div>
     <div class="filed">
-        <img class="bat" src="images/cricet.png" alt="">
+      <img class="bat" src="images/cricet.png" alt="" />
 
-        <div class="ball"></div>
+      <div class="ball"></div>
     </div>
-
-</body>
-
+  </body>
 </html>

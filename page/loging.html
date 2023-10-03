@@ -15,7 +15,7 @@
     <style>
       body {
         margin: 0px;
-        background-image: url(./page/images/sky.jpg);
+        background-image: url(./images/sky.jpg);
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -34,7 +34,6 @@
       button {
         font-size: 1.2em;
         padding-left: 15px;
-        margin-top: 10px;
         border-radius: 5px;
       }
 
@@ -51,9 +50,10 @@
       nav {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(91, 91, 155);
+        background-color: rgba(91, 91, 155, 0.61);
         height: 40px;
-        padding: 15px 5px 5px 10px;
+        padding: 10px 5px 10px 5px;
+        align-items: center;
       }
 
       nav a {
@@ -71,11 +71,11 @@
         color: black;
       }
 
-      .div-pat {
+      /* .div-pat {
         background-color: rgba(129, 129, 238, 0.192);
-        padding: 15px 5px;
-        box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
-      }
+        padding: 5px 5px;
+        /* box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61); 
+      } */
 
       .ankor:hover {
         background-color: rgb(121, 121, 187);
@@ -94,6 +94,9 @@
         padding: 2px 4px;
         width: 300px;
       }
+      .password-input {
+        margin: 10px 0px 10px 0px;
+      }
     </style>
   </head>
 
@@ -102,12 +105,12 @@
       <nav>
         <span>
           <div class="div-pat">
-            <a class="ankor" href="page/Photo-album.html">Home</a>
-            <a class="ankor" href="page/cricet.html">Criket</a>
-            <a class="ankor" href="page/batminton.html">Bad Minton</a>
-            <a class="ankor" href="page/loging.html">Loging</a>
-            <a class="ankor" href="page/kacha-bazar.html">Kacha-bazar</a>
-            <a class="ankor" href="page/vijsibility.html">Contucts</a>
+            <a class="ankor" href="Photo-album.html">Home</a>
+            <a class="ankor" href="cricet.html">Criket</a>
+            <a class="ankor" href="batminton.html">Bad Minton</a>
+            <a class="ankor" href="loging.html">Loging</a>
+            <a class="ankor" href="kacha-bazar.html">Kacha-bazar</a>
+            <a class="ankor" href="vijsibility.html">Contucts</a>
             <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
 
             <input
@@ -133,6 +136,7 @@
         <input type="email" name="" placeholder="Enter your email" id="" />
 
         <input
+          class="password-input"
           type="password"
           name=""
           placeholder="Enter your password"

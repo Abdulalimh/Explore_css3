@@ -1,115 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bad Minton</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <style>
-        .fild {
-            border: 1px solid black;
+      .fild {
+        border: 1px solid black;
+      }
 
-        }
+      .badminton_left,
+      .badminton_right {
+        height: 300px;
+      }
 
-        .badminton_left,
-        .badminton_right {
-            height: 300px;
+      .feder {
+        height: 70px;
+        position: relative;
+        bottom: 230px;
+        left: 20px;
+        transition: transform 0.8s ease-out 0.2s;
+      }
 
-        }
+      .fild:hover .feder {
+        transform: translate(880px) rotate(240deg);
+      }
 
-        .feder {
-            height: 70px;
-            position: relative;
-            bottom: 230px;
-            left: 20px;
-            transition: transform 0.8s ease-out 0.2s;
+      .badminton_right {
+        position: relative;
+        left: 800px;
+      }
 
-        }
+      .badminton_left:hover {
+        transform: rotate(40deg);
+        transform-origin: bottom right;
+        transition: transform 0.2s ease-in;
+      }
 
-        .fild:hover .feder {
-            transform: translate(880px)rotate(240deg);
+      .badminton_right:hover {
+        transform: rotate(-40deg);
+        transform-origin: bottom left;
+        transition: transform 0.2s ease-in 1s;
+      }
 
+      .div-pat a {
+        margin-right: 20px;
+        padding-left: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+      }
 
-        }
+      .div-pat {
+        background-color: rgba(129, 129, 238, 0.192);
+        padding: 15px 5px;
+        box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
+      }
 
-        .badminton_right {
-            position: relative;
-            left: 800px;
-        }
+      .ankor:hover {
+        background-color: rgb(121, 121, 187);
+        color: white;
+        padding: 5px 2px;
+      }
 
-        .badminton_left:hover {
-            transform: rotate(40deg);
-            transform-origin: bottom right;
-            transition: transform 0.2s ease-in;
-        }
+      #search {
+        width: 250px;
+        height: 20px;
+        padding: 2px 5px;
+        border-radius: 10px;
+      }
 
-        .badminton_right:hover {
-            transform: rotate(-40deg);
-            transform-origin: bottom left;
-            transition: transform 0.2s ease-in 1s;
-        }
-
-
-        .div-pat a {
-            margin-right: 20px;
-            padding-left: 10px;
-            text-decoration: none;
-            font-size: 15px;
-            color: black;
-        }
-
-        .div-pat {
-            background-color: rgba(129, 129, 238, 0.192);
-            padding: 15px 5px;
-            box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61);
-        }
-
-        .ankor:hover {
-            background-color: rgb(121, 121, 187);
-            color: white;
-            padding: 5px 2px;
-        }
-
-        #search {
-            width: 250px;
-            height: 20px;
-            padding: 2px 5px;
-            border-radius: 10px;
-        }
-
-        .search-input {
-            padding: 2px 4px;
-            width: 300px;
-        }
+      .search-input {
+        padding: 2px 4px;
+        width: 300px;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="div-pat">
-        <a class="ankor" href="page/Photo-album.html">Home</a>
-        <a class="ankor" href="page/cricet.html">Criket</a>
-        <a class="ankor" href="page/batminton.html">Bad Minton</a>
-        <a class="ankor" href="index.html">Loging</a>
-        <a class="ankor" href="page/Photo-album.html">Kacha-bazar</a>
-        <a class="ankor" href="page/vijsibility.html">Contucts</a>
-        <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
+      <a class="ankor" href="Photo-album.html">Home</a>
+      <a class="ankor" href="cricet.html">Criket</a>
+      <a class="ankor" href="batminton.html">Bad Minton</a>
+      <a class="ankor" href="loging.html">Loging</a>
+      <a class="ankor" href="kacha-bazar.html">Kacha-bazar</a>
+      <a class="ankor" href="vijsibility.html">Contucts</a>
+      <a class="ankor" href="https://github.com/Abdulalimh">About Us</a>
 
-        <input id="search" type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-
+      <input id="search" type="text" placeholder="Search.." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
     </div>
     <h1>This is my badminton fild</h1>
     <div class="fild">
-        <img class="badminton_left" src="images/batminton_left.png" alt="">
+      <img class="badminton_left" src="images/batminton_left.png" alt="" />
 
-        <img class="feder" src="feder1.png" alt="">
+      <img class="feder" src="images/feder1.png" alt="" />
 
-        <img class="badminton_right" src="images/batminton_right.png" alt="">
-
+      <img class="badminton_right" src="images/batminton_right.png" alt="" />
     </div>
-</body>
-
+  </body>
 </html>
