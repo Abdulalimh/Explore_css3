@@ -28,6 +28,7 @@
       .loging-form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
       }
 
       .loging-form input,
@@ -42,9 +43,11 @@
         padding: 5px;
       }
 
-      h1 {
+      .loging {
         font-size: 40px;
-        color: rgb(9, 238, 85);
+        color: white;
+        margin-bottom: 8px;
+        text-align: center;
       }
 
       nav {
@@ -68,19 +71,14 @@
         padding-left: 10px;
         text-decoration: none;
         font-size: 15px;
-        color: black;
+        color: rgb(97, 245, 109);
       }
 
-      /* .div-pat {
-        background-color: rgba(129, 129, 238, 0.192);
-        padding: 5px 5px;
-        /* box-shadow: 5px 10px 10px rgba(130, 134, 130, 0.61); 
-      } */
-
       .ankor:hover {
-        background-color: rgb(121, 121, 187);
+        background-color: rgb(99, 99, 226);
         color: white;
-        padding: 5px 2px;
+        padding: 5px 10px;
+        border-radius: 10px;
       }
 
       #search {
@@ -105,7 +103,9 @@
       <nav>
         <span>
           <div class="div-pat">
-            <a class="ankor" href="Photo-album.html">Home</a>
+            <a class="ankor" href="Photo-album.html"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
             <a class="ankor" href="cricet.html">Criket</a>
             <a class="ankor" href="batminton.html">Bad Minton</a>
             <a class="ankor" href="loging.html">Loging</a>
@@ -131,7 +131,7 @@
 
     <section class="loging-container">
       <form class="loging-form" action="">
-        <h1>Loging</h1>
+        <h1 class="loging">Loging</h1>
 
         <input type="email" name="" placeholder="Enter your email" id="" />
 
